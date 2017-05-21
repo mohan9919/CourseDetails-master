@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@color/cardview_shadow_start_color"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jkkniugmail.rubel.coursedetails.StudentDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_30">
+
+        <Button
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/personEditBtn"
+            android:background="@android:drawable/ic_menu_edit"/>
+
+        <Button
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/personDeleteBtn"
+            android:background="@android:drawable/ic_delete" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/blue"
+            android:layout_margin="@dimen/dp_5"
+            android:textStyle="bold"
+            android:hint="First Name"
+            android:id="@+id/tv_first_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/blue"
+            android:layout_margin="@dimen/dp_5"
+            android:textStyle="bold"
+            android:hint="Last Name"
+            android:id="@+id/tv_last_name"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:hint="phone no"
+                android:layout_weight="9"
+                android:id="@+id/phone_no"/>
+
+            <Button
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@android:drawable/ic_menu_call"
+                android:id="@+id/callBtn"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@android:drawable/sym_action_email"
+                android:id="@+id/emailBtn"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:hint="email"
+                android:layout_weight="9"
+                android:id="@+id/email"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
